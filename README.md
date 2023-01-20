@@ -8,7 +8,7 @@ The purpose of this project is to learn and create E2E and API Testing framework
 
 ## Overview
 
-This mono repo includes `webapp`, containing the React app, `cypress` containing the Cypress scripts for end-to-end testing, `playwright` containing Playwright scripts for end-to-end testing.
+This project is a mono repo created using [Yarn workspaces](https://classic.yarnpkg.com/lang/en/docs/workspaces/). It includes `webapp`, containing the React app, `cypress` containing the Cypress scripts for end-to-end testing, `playwright` containing Playwright scripts for end-to-end testing.
 
 ## Prerequisites
 
@@ -17,6 +17,16 @@ For now, we can use whatever versions, but at the time of creating this repo, we
 - Node version: 14.17
 - NPM version: 6.14.13
 - Yarn version: 1.22.19
+
+## VSCode
+
+This project is a [VS Code workspace](https://code.visualstudio.com/docs/editor/workspaces). Configuration file is available here:
+
+```shell
+.vscode/qa-js-internship.code-workspace
+```
+
+Open workspace using the File menu and selecting 'Open workspace from a file...'. Alternatively if you launch VS Code from a terminal, you can pass the path to a folder as the first argument to the code command for opening.
 
 ## Installing the project
 
