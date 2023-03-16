@@ -101,3 +101,29 @@ In this section, you can find tasks we expect in your assignment from the **Auto
 
 - E2E Automation Tests: [Tasks](./tasks/end-to-end.md)
 - API Automation Tests: [Tasks](./tasks/api.md)
+
+## For Mac M1 users
+
+To run the project on the M1 Mac laptop, som extra preparation is required.
+**Prerequisites:**
+
+- Brew package manager
+- ZSH terminal (default for VSCode)
+
+```shell
+brew install chromium
+```
+
+```shell
+cd /Applications/ && xattr -rc Chromium.app
+```
+
+```shell
+echo -e \nexport PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \nexport PUPPETEER_EXECUTABLE_PATH=`which chromium` >> ~/.zshrc
+```
+
+At this stage you must restart the terminal so the new settings are applied. After that proceed with installation 
+
+```shell
+yarn install
+```
