@@ -12,8 +12,6 @@ This project is a mono repo created using [Yarn workspaces](https://classic.yarn
 
 ## Prerequisites
 
-For now, we can use whatever versions, but at the time of creating this repo, we used
-
 - Node version: 14.17
 - NPM version: 6.14.13
 - Yarn version: 1.22.19
@@ -122,7 +120,7 @@ cd /Applications/ && xattr -rc Chromium.app
 echo -e \nexport PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \nexport PUPPETEER_EXECUTABLE_PATH=`which chromium` >> ~/.zshrc
 ```
 
-At this stage you must restart the terminal so the new settings are applied. After that proceed with installation 
+At this stage you must restart the terminal so the new settings are applied. After that proceed with installation
 
 ```shell
 yarn install
