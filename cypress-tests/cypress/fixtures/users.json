@@ -3,6 +3,13 @@
     "username": "Katharina_Bernier",
     "password": "s3cret"
   },
+  "registerUser": {
+    "firstName" : "Daniel",
+    "lastName" : "Marian",
+    "username": "DanielT",
+    "password": "s3cret",
+    "confirmPassword": "s3cret"
+  },
   "invaliduser": {
     "username": "invalid_username",
     "password": "invalid_password"

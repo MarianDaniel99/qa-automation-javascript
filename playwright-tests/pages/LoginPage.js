@@ -4,12 +4,14 @@ exports.LoginPage = class LoginPage {
   /**
    * @param {import('@playwright/test').Page} page
    */
+
   constructor(page) {
     this.page = page;
     this.userNameField = page.locator('#username');
     this.passwordField = page.locator('#password');
     this.signInButton = page.locator('[data-test=signin-submit]');
     this.loginError = page.locator('.MuiAlert-message');
+    this.isDisplayed = page.locator('.makeStyles-root-1');
   }
 
   async goto() {

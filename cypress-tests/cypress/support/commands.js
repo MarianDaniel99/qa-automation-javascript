@@ -30,6 +30,19 @@ Cypress.Commands.add('login', (userName, password) => {
   cy.get('[data-test=signin-submit]').click();
 });
 
+// Cypress.Commands.add("clickRegister"), () => {
+//   cy.get('[data-test="signup"]').click();
+// }
+
+Cypress.Commands.add('register', (firstName,lastName, userName, password, confirmPassword) => {
+  cy.get('#firstName').type(firstName);
+  cy.get('#lastName').type(lastName);
+  cy.get('#username').type(userName);
+  cy.get('#password').type(password);
+  cy.get('#confirmPassword').type(confirmPassword);
+  cy.get('[data-test=signup-submit]').click();
+});
+
 Cypress.Commands.add('loginRequest', (userName, password) => {
   cy.request({
     method: 'POST',

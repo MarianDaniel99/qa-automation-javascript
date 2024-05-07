@@ -7,6 +7,12 @@ exports.MyAccountPage = class MyAccountPage {
   constructor(page) {
     this.page = page;
     this.userName = page.locator('[data-test=sidenav-username]');
+    this.userFullName = page.locator('.MuiTypography-subtitle1');
     this.logOutLink = page.locator('[data-test=sidenav-signout]');
+    this.balance = page.locator('[data-test="sidenav-user-balance"]');
+  }
+
+  async userLogout() {
+    await this.logOutLink.click();
   }
 };

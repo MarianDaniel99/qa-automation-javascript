@@ -4,14 +4,14 @@
       "id": "t45AiwidW",
       "uuid": "6383f84e-b511-44c5-a835-3ece1d781fa8",
       "firstName": "Edgar",
-      "lastName": "Johns",
+      "lastName": "Jones",
       "username": "Katharina_Bernier",
       "password": "$2a$10$5PXHGtcsckWtAprT5/JmluhR13f16BL8SIGhvAKNP.Dhxkt69FfzW",
-      "email": "Norene39@yahoo.com",
-      "phoneNumber": "625-316-9882",
+      "email": "edgar@yahoo.com",
+      "phoneNumber": "222-222-3312",
       "avatar": "https://cypress-realworld-app-svgs.s3.amazonaws.com/t45AiwidW.svg",
       "defaultPrivacyLevel": "public",
-      "balance": 148137,
+      "balance": 167637,
       "createdAt": "2019-08-27T23:47:05.637Z",
       "modifiedAt": "2020-05-21T11:02:22.857Z"
     },
@@ -26,7 +26,7 @@
       "phoneNumber": "537-041-4355",
       "avatar": "https://cypress-realworld-app-svgs.s3.amazonaws.com/qywYp6hS0U.svg",
       "defaultPrivacyLevel": "private",
-      "balance": 121805,
+      "balance": 102305,
       "createdAt": "2019-09-09T13:48:45.489Z",
       "modifiedAt": "2020-05-21T02:34:01.483Z"
     },
@@ -74,6 +74,28 @@
       "balance": 75369,
       "createdAt": "2020-02-11T21:26:46.510Z",
       "modifiedAt": "2020-05-21T15:15:33.944Z"
+    },
+    {
+      "id": "rqLTqUhe6",
+      "uuid": "732d2816-c753-45cd-85b4-fc7622d28bb7",
+      "firstName": "Daniel",
+      "lastName": "Terteci",
+      "username": "daniel123",
+      "password": "$2a$10$j3CopqBcAftgXtrHN3wx2efQbNbjNZ6IU2szF4w.oWrjK29Ija0Ni",
+      "balance": 0,
+      "createdAt": "2024-05-07T07:03:34.100Z",
+      "modifiedAt": "2024-05-07T07:03:34.100Z"
+    },
+    {
+      "id": "0Xky5UQPo",
+      "uuid": "e104f7c3-381c-4b2d-adda-37c27b206201",
+      "firstName": "Daniel",
+      "lastName": "Marian",
+      "username": "DanielT",
+      "password": "$2a$10$YeAdrLtDxM/6G1.Q1vaiouXYgkySSNyr.VC2njDTrH8dPfyp8gwBq",
+      "balance": 0,
+      "createdAt": "2024-05-07T07:45:51.905Z",
+      "modifiedAt": "2024-05-07T07:45:51.905Z"
     }
   ],
   "contacts": [
@@ -206,7 +228,7 @@
       "bankName": "O'Hara - Labadie Bank",
       "accountNumber": "6123387981",
       "routingNumber": "851823229",
-      "isDeleted": false,
+      "isDeleted": true,
       "createdAt": "2020-05-09T07:57:26.947Z",
       "modifiedAt": "2020-05-21T22:18:50.916Z"
     },
@@ -9857,28 +9879,29 @@
       "modifiedAt": "2020-05-21T04:58:44.494Z"
     },
     {
-      "id": "Hst1Pl09f",
-      "uuid": "7ceeba68-fe12-4c58-9b71-0333c1e83bb7",
-      "amount": 10000,
-      "description": "description",
+      "id": "pYIhTG0Rwo",
+      "uuid": "5168581a-f183-419c-9cb6-5883eb4e0829",
+      "amount": 1000,
+      "description": "testRequest",
       "receiverId": "qywYp6hS0U",
       "senderId": "t45AiwidW",
       "privacyLevel": "public",
-      "status": "complete",
-      "createdAt": "2022-08-30T07:57:10.755Z",
-      "modifiedAt": "2022-08-30T07:57:10.755Z"
+      "status": "pending",
+      "requestStatus": "pending",
+      "createdAt": "2024-05-07T07:03:34.832Z",
+      "modifiedAt": "2024-05-07T07:03:34.833Z"
     },
     {
-      "id": "dvxC5_o2x",
-      "uuid": "7ae41a85-5996-4dfb-ac73-9f2498ae0eb8",
-      "amount": 10000,
-      "description": "description",
+      "id": "7sIl8ohmu",
+      "uuid": "4af3f94d-3ea3-4c8b-aa6e-d08e08ee4221",
+      "amount": 500,
+      "description": "testPay",
       "receiverId": "qywYp6hS0U",
       "senderId": "t45AiwidW",
       "privacyLevel": "public",
       "status": "complete",
-      "createdAt": "2022-08-30T07:59:17.958Z",
-      "modifiedAt": "2022-08-30T07:59:17.958Z"
+      "createdAt": "2024-05-07T07:03:37.174Z",
+      "modifiedAt": "2024-05-07T07:03:37.174Z"
     }
   ],
   "likes": [
@@ -10457,24 +10480,24 @@
       "modifiedAt": "2020-05-21T21:00:50.192Z"
     },
     {
-      "id": "8JtwIW2l5q",
-      "uuid": "850294e3-b2b9-4087-9b16-e3b6c5a64344",
+      "id": "0w__MiudhV",
+      "uuid": "48e31407-b02d-497d-bddd-3c3685c82fcb",
       "userId": "qywYp6hS0U",
-      "transactionId": "Hst1Pl09f",
-      "status": "received",
+      "transactionId": "pYIhTG0Rwo",
+      "status": "requested",
       "isRead": false,
-      "createdAt": "2022-08-30T07:57:10.780Z",
-      "modifiedAt": "2022-08-30T07:57:10.780Z"
+      "createdAt": "2024-05-07T07:03:34.837Z",
+      "modifiedAt": "2024-05-07T07:03:34.837Z"
     },
     {
-      "id": "TfKD0SNwV8",
-      "uuid": "1e4974fb-716d-4a79-a666-4adb00a6907a",
+      "id": "m6fqflNaSt",
+      "uuid": "928a6cc8-fdf8-403d-8c7d-9ee386b4c6fd",
       "userId": "qywYp6hS0U",
-      "transactionId": "dvxC5_o2x",
+      "transactionId": "7sIl8ohmu",
       "status": "received",
       "isRead": false,
-      "createdAt": "2022-08-30T07:59:17.968Z",
-      "modifiedAt": "2022-08-30T07:59:17.968Z"
+      "createdAt": "2024-05-07T07:03:37.184Z",
+      "modifiedAt": "2024-05-07T07:03:37.184Z"
     }
   ],
   "banktransfers": [
