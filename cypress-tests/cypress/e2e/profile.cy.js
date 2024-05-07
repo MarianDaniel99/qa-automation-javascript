@@ -49,6 +49,19 @@ describe('should be able to like and comment on transaction', () => {
       cy.get('[data-test^="transaction-item"]').eq(2).should('exist').click({force:true});
       // cy.get('[data-test^="transaction-like-button"]').first().click(); // The button is disabled after first click
       cy.get('[data-test^="transaction-like-button"]').first().should('exist');
-      cy.get('[data-test^="transaction-comment-input"]').first().type('Test').type('{enter}');
+      cy.get('[data-test^="transaction-comment-input"]').first().type('Test2',{force:true}).type('{enter}');
+  })
+});
+
+describe('should update account user settings', () => {
+  it('should update account user settings', function () {
+      cy.login(users.testuser.username, users.testuser.password);
+      cy.get('[data-test=sidenav-username]').should('exist').contains(users.testuser.username);
+      cy.get('[data-test="sidenav-user-settings"]').click();
+      cy.get('#user-settings-firstName-input').clear().type("Edgar");
+      cy.get('#user-settings-lastName-input').clear().type("Johnes");
+      cy.get('#user-settings-email-input').clear().type("edgar2@yahoo.com");
+      cy.get('#user-settings-phoneNumber-input').clear().type("121-211-3312");
+      cy.get('[data-test="user-settings-submit"]').click({force:true});
   })
 });

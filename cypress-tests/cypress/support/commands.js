@@ -39,10 +39,6 @@ Cypress.Commands.add('register', (firstName,lastName, userName, password, confir
   cy.get('[data-test=signup-submit]').click();
 });
 
-Cypress.Commands.add('transactionListClick', () => {
-  cy.get('[data-test^="transaction-item"]').first().click();
-})
-
 Cypress.Commands.add('loginRequest', (userName, password) => {
   cy.request({
     method: 'POST',
