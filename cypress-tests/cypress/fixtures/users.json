@@ -1,6 +1,7 @@
 {
   "testuser": {
     "username": "Katharina_Bernier",
+    "userFullName" : "Edgar J",
     "password": "s3cret"
   },
   "registerUser": {

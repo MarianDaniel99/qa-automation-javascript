@@ -1,8 +1,8 @@
 export const testUser = { 
  username: 'Katharina_Bernier',
  userFullName: "Edgar J",
- password: 's3cret',
- id: 't45AiwidW',
+ password: 's3cret'
+//  id: 't45AiwidW',
 };
 export const registerUser = {
   firstname: 'Daniel', 

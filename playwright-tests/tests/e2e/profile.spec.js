@@ -83,7 +83,7 @@ test('should add new bank account', async({page}) => {
   const bankAccount = new BankAccount(page);
   await bankAccount.displayBankAccounts.click();
   await bankAccount.createBankAccount.click();
-  await bankAccount.bankName.fill("Gridd");
+  await bankAccount.bankName.fill("Test1");
   await bankAccount.routingNumber.fill("222222222");
   await bankAccount.accountNumber.fill("123123123");
   await bankAccount.saveBankAccount.click();
