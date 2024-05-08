@@ -112,7 +112,7 @@ test('should submit payment transaction', async({page}) => {
   await transactionPage.requestButton.click();
 });
 
-test('should submit payment request transaction', async({page}) => {
+test('should submit request transaction', async({page}) => {
   const loginPage = new LoginPage(page);
   await loginPage.goto();
   await loginPage.userLogin(testUser.username, testUser.password);
