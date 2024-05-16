@@ -2,7 +2,8 @@
   "testuser": {
     "username": "Katharina_Bernier",
     "userFullName" : "Edgar J",
-    "password": "s3cret"
+    "password": "s3cret",
+    "id": "t45AiwidW"
   },
   "registerUser": {
     "firstName" : "Daniel",

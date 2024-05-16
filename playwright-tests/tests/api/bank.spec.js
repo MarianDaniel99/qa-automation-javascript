@@ -11,7 +11,7 @@ test('Should get list of bank account', async ({ request }) => {
     let bankData = await bankResponse.json();
     expect(bankResponse.ok()).toBeTruthy();
     expect(bankData.results).toBeDefined();
-    // console.log(bankData.results);
+    console.log(bankData.results);
   });
 
   test('Should delete bank account', async ({ request }) => {

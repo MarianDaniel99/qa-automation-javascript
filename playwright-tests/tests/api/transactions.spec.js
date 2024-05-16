@@ -34,7 +34,7 @@ test('should create transaction request', async ({ request }) => {
 });
 
 test('Should add comment to transaction', async ({ request }) => {
-  const commentResponse = await request.post('/comments/h4kW1TxHXI', {
+  const commentResponse = await request.post('/comments/vYWpMCHEcK', {
     data: {
       content: 'apiTest',
       userId: testUser.id,

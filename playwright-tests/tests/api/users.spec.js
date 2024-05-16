@@ -11,7 +11,7 @@ test('should get list of users', async ({ request }) => {
     let users = await usersResponse.json();
     expect(usersResponse.ok()).toBeTruthy();
     expect(users.results).toBeDefined();
-    // console.log(users.results);
+    console.log(users.results);
   });
 
   test('Should get user profile by user name', async ({ request }) => {
@@ -19,7 +19,7 @@ test('should get list of users', async ({ request }) => {
     let userProfile = await userProfileResponse.json();
     expect(userProfileResponse.ok()).toBeTruthy();
     expect(userProfile).toBeDefined();
-    // console.log(userProfile);
+    console.log(userProfile);
   });
 
   test('Should get notifications list', async ({ request }) => {

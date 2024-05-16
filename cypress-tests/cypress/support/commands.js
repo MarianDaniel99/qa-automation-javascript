@@ -51,3 +51,19 @@ Cypress.Commands.add('loginRequest', (userName, password) => {
     failOnStatusCode: false,
   });
 });
+
+Cypress.Commands.add('registerRequest', (firstName, lastName, username, password, confirmPassword) => {
+  cy.request({
+    method: 'POST',
+    url: '/users',
+    body: {
+      firstName: firstName,
+      lastName : lastName,
+      username: username,
+      password: password,
+      confirmPassword : confirmPassword,
+      type: 'REGISTER',
+    },
+    failOnStatusCode: false,
+  });
+});
