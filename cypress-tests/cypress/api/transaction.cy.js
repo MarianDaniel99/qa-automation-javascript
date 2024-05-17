@@ -47,7 +47,7 @@ describe('Transactions', () => {
         it('should add comment to transaction', () => {
             cy.request({
               method: 'POST',
-              url: '/comments/vYWpMCHEcK',
+              url: '/comments/-7xanIywv9x',
               body: {
                 content: 'apiTestCypress',
                 userId: users.testuser.id,
