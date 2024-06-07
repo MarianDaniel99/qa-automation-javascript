@@ -9,6 +9,7 @@
     "install": "playwright install"
   },
   "devDependencies": {
-    "@playwright/test": "^1.25.0"
+    "@playwright/test": "^1.25.0",
+    "allure-playwright": "2.4.0"
   }
 }

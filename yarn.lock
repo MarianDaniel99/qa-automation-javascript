@@ -5209,6 +5209,21 @@ ajv@^8.0.1:
     require-from-string "^2.0.2"
     uri-js "^4.2.2"
 
+allure-js-commons@2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/allure-js-commons/-/allure-js-commons-2.4.0.tgz#1f75ff0ac153e30aaf4a4eb835fc6e55ee6610c6"
+  integrity sha512-mIQKAA91ihtMPzHJh7fQib/8MhZaUQ0oYtqFzS//5/Q+ILbMWW3WD2ISWtwniFAF2XWdRFjZ013IfUuKusbh1g==
+  dependencies:
+    properties "^1.2.1"
+    uuid "^8.3.0"
+
+allure-playwright@2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/allure-playwright/-/allure-playwright-2.4.0.tgz#8b8ce4ac27290dbc87120029d12aefc8b1477b75"
+  integrity sha512-YtOdQXKPUFFfXVEPUaH5ebNf/2tLmJ1q898l+TPCPBeTQWVpKxLJm5yQkBbu+cmbsN+FGCsfDHFiqcS/r6f71w==
+  dependencies:
+    allure-js-commons "2.4.0"
+
 alphanum-sort@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
@@ -14531,6 +14546,11 @@ prop-types@^15.5.6, prop-types@^15.5.7, prop-types@^15.6.0, prop-types@^15.6.2, 
     loose-envify "^1.4.0"
     object-assign "^4.1.1"
     react-is "^16.13.1"
+
+properties@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/properties/-/properties-1.2.1.tgz#0ee97a7fc020b1a2a55b8659eda4aa8d869094bd"
+  integrity sha512-qYNxyMj1JeW54i/EWEFsM1cVwxJbtgPp8+0Wg9XjNaK6VE/c4oRi6PNu5p7w1mNXEIQIjV5Wwn8v8Gz82/QzdQ==
 
 property-expr@^2.0.4:
   version "2.0.5"

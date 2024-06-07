@@ -83,9 +83,9 @@ test('should add new bank account', async({page}) => {
   const bankAccount = new BankAccount(page);
   await bankAccount.displayBankAccounts.click();
   await bankAccount.createBankAccount.click();
-  await bankAccount.bankName.fill("Test1");
-  await bankAccount.routingNumber.fill("222222222");
-  await bankAccount.accountNumber.fill("123123123");
+  await bankAccount.bankName.fill("TestPlaywright");
+  await bankAccount.routingNumber.fill("231112232");
+  await bankAccount.accountNumber.fill("112314221");
   await bankAccount.saveBankAccount.click();
 });
 
@@ -107,9 +107,9 @@ test('should submit payment transaction', async({page}) => {
   await transactionPage.newTransactionButton.click();
   await expect(transactionPage.transactionUsers).toBeVisible();
   await transactionPage.userList.click();
-  await transactionPage.amount.fill('10');
-  await transactionPage.note.fill('testRequest');
-  await transactionPage.requestButton.click();
+  await transactionPage.amount.fill('5');
+  await transactionPage.note.fill('testPay');
+  await transactionPage.payButton.click();
 });
 
 test('should submit request transaction', async({page}) => {
@@ -120,7 +120,7 @@ test('should submit request transaction', async({page}) => {
   await transactionPage.newTransactionButton.click();
   await expect(transactionPage.transactionUsers).toBeVisible();
   await transactionPage.userList.click();
-  await transactionPage.amount.fill('5');
-  await transactionPage.note.fill('testPay');
-  await transactionPage.payButton.click();
+  await transactionPage.amount.fill('15');
+  await transactionPage.note.fill('testRequest');
+  await transactionPage.requestButton.click();
 });

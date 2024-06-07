@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  webapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:3000 || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 6
+
+  playwright:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      webapp:
+        condition: service_healthy
+    environment:
+      - NODE_ENV=testing
+    command: ["sh", "-c", "yarn playwright:api"] 
